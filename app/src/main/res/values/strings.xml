@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">InTheWakeOfGods</string>
+
+    <string name="question1">1. I have stolen the fire for you. Can you recognize me?</string>
+    <string name="q1answer1">Poseidon</string>
+    <string name="q1answer2">Prometheus</string>
+    <string name="q1answer3">Hades</string>
+    <string name="q1answer4">Athena</string>
+
 </resources>

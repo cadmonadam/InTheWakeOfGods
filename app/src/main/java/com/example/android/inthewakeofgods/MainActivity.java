@@ -34,10 +34,10 @@ public class MainActivity extends AppCompatActivity {
     //This method checks question 1. If the answer is correct then score increases by 1
     public int checkQuestion1() {
 
-        RadioButton question1 = (RadioButton) findViewById(R.id.answer_3);
-        boolean Lotr = question1.isChecked();
+        RadioButton question1 = (RadioButton) findViewById(R.id.answer_prometheus);
+        boolean Prom = question1.isChecked();
 
-        if (Lotr) {
+        if (Prom) {
             return 1;
         } else {
             return 0;

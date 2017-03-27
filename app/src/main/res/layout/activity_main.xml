@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#455A64"
+    android:background="@drawable/flames2"
     tools:context="com.example.android.inthewakeofgods.MainActivity">
 
 <RelativeLayout
@@ -17,7 +17,7 @@
         android:layout_height="match_parent"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:background="#F5F5F5"
+        android:background="#90d35400"
         android:orientation="vertical">
 
         <TextView
@@ -26,47 +26,55 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="20dp"
-            android:text="1. How many Lord of the Rings movies have been made?"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/question1"
             android:textColor="#000000"
             android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true"
+            android:src="@drawable/prometheus" />
 
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom=""
             android:gravity="center"
             android:orientation="horizontal">
 
             <RadioButton
-                android:id="@+id/answer_4"
+                android:id="@+id/answer_poseidon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="4" />
+                android:text="@string/q1answer1" />
 
             <RadioButton
-                android:id="@+id/answer_5"
+                android:id="@+id/answer_prometheus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="5" />
+                android:text="@string/q1answer2" />
 
             <RadioButton
-                android:id="@+id/answer_3"
+                android:id="@+id/answer_hades"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3" />
+                android:text="@string/q1answer3" />
 
             <RadioButton
-                android:id="@+id/answer_6"
+                android:id="@+id/answer_athena"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="6" />
+                android:text="@string/q1answer4" />
         </RadioGroup>
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="3dp"
-            android:backgroundTint="#455A64"
+            android:layout_height="20dp"
             android:layout_marginTop="10dp"
-            android:background="#000000" />
+            android:background="@drawable/flames" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -117,10 +125,9 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="3dp"
-            android:backgroundTint="#455A64"
+            android:layout_height="20dp"
             android:layout_marginTop="10dp"
-            android:background="#000000" />
+            android:background="@drawable/flames" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -142,10 +149,9 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="3dp"
-            android:backgroundTint="#455A64"
+            android:layout_height="20dp"
             android:layout_marginTop="10dp"
-            android:background="#000000" />
+            android:background="@drawable/flames" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -159,9 +165,9 @@
 
         <LinearLayout
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_height="wrap_content">
+            android:layout_marginRight="20dp">
 
             <ImageView
                 android:layout_width="0dp"
@@ -205,10 +211,9 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="3dp"
-            android:backgroundTint="#455A64"
+            android:layout_height="20dp"
             android:layout_marginTop="10dp"
-            android:background="#000000" />
+            android:background="@drawable/flames" />
 
         <Button
             android:layout_width="wrap_content"
@@ -222,9 +227,9 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="7dp"
-            android:backgroundTint="#455A64"
             android:layout_marginTop="10dp"
-            android:background="#000000" />
+            android:background="#000000"
+            android:backgroundTint="#455A64" />
 
     </LinearLayout>
 </RelativeLayout>
