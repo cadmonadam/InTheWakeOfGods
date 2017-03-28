@@ -1,10 +1,40 @@
 <resources>
     <string name="app_name">InTheWakeOfGods</string>
 
-    <string name="question1">1. I have stolen the fire for you. Can you recognize me?</string>
+    <string name="question1">I. I have stolen the fire for you. Can you recognize me?</string>
     <string name="q1answer1">Poseidon</string>
     <string name="q1answer2">Prometheus</string>
     <string name="q1answer3">Hades</string>
     <string name="q1answer4">Athena</string>
+    <string name="question2">„II. War. War never changes.” That’s why I am still alive.</string>
+    <string name="q2hint">The name of the God starts with „A”.</string>
+    <string name="question3">III. I am the best at blacksmithing! With a wounded leg I am not too fast.</string>
+    <string name="q3answer1">Poseidon</string>
+    <string name="q3answer2">Hephaestus</string>
+    <string name="q3answer3">Hades</string>
+    <string name="q3answer4">Heracles</string>
+    <string name="question4">IV. I am the Fahter of Gods and men, thunderstorm follows my path. </string>
+    <string name="q4hint">4 letters</string>
+    <string name="question5">V. I am the most beautiful Goddess on the world, but I’ve made a mistake by choosing the Apple. I wish I had known Android!</string>
+    <string name="q5hint"> The name of the Goddess starts with „A”.</string>
+    <string name="question6">VI. As a ruler of the Underworld I command the most ferocious three-headed guardian. Stop barking at me Cerberus!</string>
+    <string name="q6answer1">Heracles</string>
+    <string name="q6answer2">Hades</string>
+    <string name="q6answer3">Perseus</string>
+    <string name="q6answer4">Achilles</string>
+    <string name="question7">VII. If you truly believe the sanctity of marriage, I – the Queen of Olympus – will guard you in your life.</string>
+    <string name="q7hint">She is also known as Zeus’ wife.</string>
+    <string name="question8">VIII. Trident is my favourite weapon and all of my thoughts are about the Sea.</string>
+    <string name="q8answer1">Poseidon</string>
+    <string name="q8answer2">Hermes</string>
+    <string name="q8answer3">Dyonysus</string>
+    <string name="q8answer4">Achilles</string>
+    <string name="question9">IX. Zeus says: My son – Heracles -  had a lot of tasks to gain immortality. Can you name two of them?</string>
+    <string name="q9answer1">Slay the Nemean Lion</string>
+    <string name="q9answer2">Steal the fire from the Titans</string>
+    <string name="q9answer3">Capture the Cretan Bull</string>
+    <string name="q9answer4">Kill Medusa</string>
+    <string name="question10">X. I’am watching you every time you fall asleep.  „Remember: all I'm offering is the truth. Nothing more.”</string>
+    <string name="q10hint">I bet you will find out!</string>
 
 </resources>
