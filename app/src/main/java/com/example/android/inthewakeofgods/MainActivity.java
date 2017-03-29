@@ -9,6 +9,10 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+import static com.example.android.inthewakeofgods.R.string.question1;
+import static com.example.android.inthewakeofgods.R.string.question2;
+import static com.example.android.inthewakeofgods.R.string.question9;
+
 public class MainActivity extends AppCompatActivity {
 
     // This app displays the users correct answers in a numeric format
@@ -27,69 +31,178 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    // This method is called when the CHECK YOUR RESULTS button is clicked
-    public void submitOrder(View view) {
+    // This method is called when you click the CHECK YOUR ANSWERS button
+
+    public void checkAnswers(View view) {
         score = 0;
         score += checkQuestion1();
         score += checkQuestion2();
         score += checkQuestion3();
         score += checkQuestion4();
-        Toast.makeText(this, "You answered correctly to "+ score + " out of 4 questions", Toast.LENGTH_SHORT).show();
+        score += checkQuestion5();
+        score += checkQuestion6();
+        score += checkQuestion7();
+        score += checkQuestion8();
+        score += checkQuestion9();
+        score += checkQuestion10();
+
+        Toast.makeText(this, "You answered correctly to " + score + " out of 10 questions", Toast.LENGTH_SHORT).show();
     }
 
-    //This method checks question 1. If the answer is correct then score increases by 1
+    //This method checks question 1. In case of correct answer the value of score is increased by 1.
+
     public int checkQuestion1() {
 
-        RadioButton question1 = (RadioButton) findViewById(R.id.answer_prometheus);
-        boolean Prom = question1.isChecked();
+        RadioButton question1 = (RadioButton) findViewById(R.id.q1a2);
+        boolean Prometheus = question1.isChecked();
 
-        if (Prom) {
+        if (Prometheus) {
             return 1;
         } else {
             return 0;
         }
     }
 
-    // This method checks question 2. If the answer is correct then score increases by 1
+    // This method checks question 2. In case of correct answer the value of score is increased by 1.
+
     public int checkQuestion2() {
 
-        CheckBox question2A = (CheckBox) findViewById(R.id.leonardo);
-        boolean Leonardo = question2A.isChecked();
+        EditText question2 = (EditText) findViewById(R.id.q2a);
+        Editable userText = question2.getText();
+        String Ares = userText.toString().toLowerCase();
 
-        CheckBox question2B = (CheckBox) findViewById(R.id.tom_hardy);
-        boolean Tom = question2B.isChecked();
-
-        if (Leonardo && Tom) {
+        if (Ares.equals("Ares")) {
             return 1;
         } else {
             return 0;
         }
     }
 
-    // This method checks question 3. If the answer is correct then score increases by 1
+    //This method checks question 3. In case of correct answer the value of score is increased by 1.
+
     public int checkQuestion3() {
 
-        EditText question3 = (EditText) findViewById(R.id.edit_view_1);
-        Editable userText = question3.getText();
-        String StarWars = userText.toString().toLowerCase();
+        RadioButton question3 = (RadioButton) findViewById(R.id.q3a2);
+        boolean Hephaestus = question3.isChecked();
 
-        if (StarWars.equals("force be with you")) {
+        if (Hephaestus) {
             return 1;
         } else {
             return 0;
         }
     }
 
-    //This method checks question 4. If the answer is correct then score increases by 1
+// This method checks question 4. In case of correct answer the value of score is increased by 1.
+
     public int checkQuestion4() {
 
-        RadioButton question4 = (RadioButton) findViewById(R.id.emily);
-        boolean emily = question4.isChecked();
+        EditText question4 = (EditText) findViewById(R.id.q4a);
+        Editable userText = question4.getText();
+        String Zeus = userText.toString().toLowerCase();
 
-        if (emily) {
+        if (Zeus.equals("Zeus")) {
+            return 1;
+        } else {
+            return 0;
+        }
+    }
+
+// This method checks question 5. In case of correct answer the value of score is increased by 1.
+
+    public int checkQuestion5() {
+
+        EditText question5 = (EditText) findViewById(R.id.q5a);
+        Editable userText = question5.getText();
+        String Aphrodite = userText.toString().toLowerCase();
+
+        if (Aphrodite.equals("Aphrodite")) {
+            return 1;
+        } else {
+            return 0;
+        }
+    }
+
+
+    //This method checks question 6. In case of correct answer the value of score is increased by 1.
+
+    public int checkQuestion6() {
+
+        RadioButton question6 = (RadioButton) findViewById(R.id.q6a2);
+        boolean Hades = question6.isChecked();
+
+        if (Hades) {
+            return 1;
+        } else {
+            return 0;
+        }
+    }
+
+// This method checks question 7. In case of correct answer the value of score is increased by 1.
+
+    public int checkQuestion7() {
+
+        EditText question5 = (EditText) findViewById(R.id.q7a);
+        Editable userText = question5.getText();
+        String Hera = userText.toString().toLowerCase();
+
+        if (Hera.equals("Hera")) {
+            return 1;
+        } else {
+            return 0;
+        }
+    }
+
+    //This method checks question 8. In case of correct answer the value of score is increased by 1.
+
+    public int checkQuestion8() {
+
+        RadioButton question8 = (RadioButton) findViewById(R.id.q8a1);
+        boolean Poseidon = question8.isChecked();
+
+        if (Poseidon) {
+            return 1;
+        } else {
+            return 0;
+        }
+    }
+
+
+    // This method checks question 9. In case of correct answer the value of score is increased by 1.
+
+    public int checkQuestion9() {
+
+        CheckBox question9A = (CheckBox) findViewById(R.id.q9a1);
+        boolean Lion = question9A.isChecked();
+
+        CheckBox question9C = (CheckBox) findViewById(R.id.q9a3);
+        boolean Bull = question9C.isChecked();
+
+        if (Lion && Bull) {
+            return 1;
+        } else {
+            return 0;
+        }
+    }
+
+// This method checks question 10. In case of correct answer the value of score is increased by 1.
+
+    public int checkQuestion10() {
+
+        EditText question10 = (EditText) findViewById(R.id.q10a);
+        Editable userText = question10.getText();
+        String Morpheus = userText.toString().toLowerCase();
+
+        if (Morpheus.equals("Morpheus")) {
             return 1;
         } else {
             return 0;
         }
     }
 }
+
+
+
+
+
+
+
