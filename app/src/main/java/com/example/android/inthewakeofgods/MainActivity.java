@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
 
         EditText question2 = (EditText) findViewById(R.id.q2a);
         Editable userText = question2.getText();
-        String Ares = userText.toString().toLowerCase();
+        String Ares = userText.toString();
 
         if (Ares.equals("Ares")) {
             return 1;
@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
 
         EditText question4 = (EditText) findViewById(R.id.q4a);
         Editable userText = question4.getText();
-        String Zeus = userText.toString().toLowerCase();
+        String Zeus = userText.toString();
 
         if (Zeus.equals("Zeus")) {
             return 1;
@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
 
         EditText question5 = (EditText) findViewById(R.id.q5a);
         Editable userText = question5.getText();
-        String Aphrodite = userText.toString().toLowerCase();
+        String Aphrodite = userText.toString();
 
         if (Aphrodite.equals("Aphrodite")) {
             return 1;
@@ -143,7 +143,7 @@ public class MainActivity extends AppCompatActivity {
 
         EditText question5 = (EditText) findViewById(R.id.q7a);
         Editable userText = question5.getText();
-        String Hera = userText.toString().toLowerCase();
+        String Hera = userText.toString();
 
         if (Hera.equals("Hera")) {
             return 1;
@@ -190,7 +190,7 @@ public class MainActivity extends AppCompatActivity {
 
         EditText question10 = (EditText) findViewById(R.id.q10a);
         Editable userText = question10.getText();
-        String Morpheus = userText.toString().toLowerCase();
+        String Morpheus = userText.toString();
 
         if (Morpheus.equals("Morpheus")) {
             return 1;

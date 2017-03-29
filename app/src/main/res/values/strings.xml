@@ -36,6 +36,6 @@
     <string name="q9answer4">Kill Medusa</string>
     <string name="question10">X. I am watching you every time you fall asleep.  „Remember: all I am offering is the truth. Nothing more.”</string>
     <string name="q10hint">I bet you will find out!</string>
-    <string name="Check">I bet you will find out!</string>
+    <string name="submit">Submit your answers</string>
 
 </resources>
