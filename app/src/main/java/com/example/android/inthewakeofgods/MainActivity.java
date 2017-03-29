@@ -21,6 +21,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+    }
+
+
     // This method is called when the CHECK YOUR RESULTS button is clicked
     public void submitOrder(View view) {
         score = 0;

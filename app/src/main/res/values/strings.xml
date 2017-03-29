@@ -6,7 +6,7 @@
     <string name="q1answer2">Prometheus</string>
     <string name="q1answer3">Hades</string>
     <string name="q1answer4">Athena</string>
-    <string name="question2">„II. War. War never changes.” That’s why I am still alive.</string>
+    <string name="question2">„II. War. War never changes.” That is why I am still alive.</string>
     <string name="q2hint">The name of the God starts with „A”.</string>
     <string name="question3">III. I am the best at blacksmithing! With a wounded leg I am not too fast.</string>
     <string name="q3answer1">Poseidon</string>
@@ -15,7 +15,7 @@
     <string name="q3answer4">Heracles</string>
     <string name="question4">IV. I am the Fahter of Gods and men, thunderstorm follows my path. </string>
     <string name="q4hint">4 letters</string>
-    <string name="question5">V. I am the most beautiful Goddess on the world, but I’ve made a mistake by choosing the Apple. I wish I had known Android!</string>
+    <string name="question5">V. I am the most beautiful Goddess on the world, but I have made a mistake by choosing the Apple. I wish I had known Android!</string>
     <string name="q5hint"> The name of the Goddess starts with „A”.</string>
     <string name="question6">VI. As a ruler of the Underworld I command the most ferocious three-headed guardian. Stop barking at me Cerberus!</string>
     <string name="q6answer1">Heracles</string>
@@ -34,7 +34,7 @@
     <string name="q9answer2">Steal the fire from the Titans</string>
     <string name="q9answer3">Capture the Cretan Bull</string>
     <string name="q9answer4">Kill Medusa</string>
-    <string name="question10">X. I’am watching you every time you fall asleep.  „Remember: all I'm offering is the truth. Nothing more.”</string>
+    <string name="question10">X. I am watching you every time you fall asleep.  „Remember: all I am offering is the truth. Nothing more.”</string>
     <string name="q10hint">I bet you will find out!</string>
 
 </resources>
