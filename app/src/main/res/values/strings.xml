@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">InTheWakeOfGods</string>
+    <string name="Title">In The Wake of Gods..</string>
+    <string name="Subtitle">Test Your Mythical Knowledge!</string>
+    <string name="button_start">Start</string>
 
     <string name="question1">I. I have stolen the fire for you. Can you recognize me?</string>
     <string name="q1answer1">Poseidon</string>
@@ -37,5 +40,17 @@
     <string name="question10">X. I am watching you every time you fall asleep.  „Remember: all I am offering is the truth. Nothing more.”</string>
     <string name="q10hint">I bet you will find out!</string>
     <string name="submit">Submit your answers</string>
-
+    <string name="answers">Show the answers</string>
+    <string name="thanks">Thank you for playing!</string>
+    <string name="endtitle">And The Name of Gods..!</string>
+    <string name="correctAnswer1">I. Poseidon stole the fire for the humans.</string>
+    <string name="correctAnswer2">II. The God of War is Ares.</string>
+    <string name="correctAnswer3">III. The God of Blacksmith and Volcanoes is Hephaestus.</string>
+    <string name="correctAnswer4">IV. Zeus is the Main God in Greek Mythology.</string>
+    <string name="correctAnswer5">V. The Goddess of Beauty is Aphrodite.</string>
+    <string name="correctAnswer6">VI. Hades rules the Army of Dead.</string>
+    <string name="correctAnswer7">VII. The Queen of Olympus is Hera.</string>
+    <string name="correctAnswer8">VIII. The God of Sea is Poseidon.</string>
+    <string name="correctAnswer9">IX. Heracles slayed the Nemean Lion and captured the Cretan Bull.</string>
+    <string name="correctAnswer10">X. If you choose the red pill you may see Morpheus.</string>
 </resources>
