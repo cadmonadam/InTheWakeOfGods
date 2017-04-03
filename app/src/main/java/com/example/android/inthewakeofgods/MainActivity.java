@@ -16,9 +16,6 @@ import static com.example.android.inthewakeofgods.R.string.question9;
 
 public class MainActivity extends AppCompatActivity {
 
-    // This app displays the users correct answers in a numeric format
-    // This integer counts the number of correct answers
-    int score = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
     }
+
+    //By pressing the "Start" button the app goes to the quiz screen.
 
     public void onClick(View view) {
         Intent intent = new Intent(this, Quiz.class);

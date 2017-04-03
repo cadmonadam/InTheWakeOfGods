@@ -11,13 +11,13 @@ import android.widget.RadioButton;
 import android.widget.Toast;
 
 /**
- * Created by Adam Cadmon on 2017. 04. 02..
+ * This is the quiz activity screen.
  */
 
 public class Quiz extends AppCompatActivity {
 
-    // This app displays the users correct answers in a numeric format
-    // This integer counts the number of correct answers
+
+    // The score integer counts the number of correct answers.
     int score = 0;
 
     @Override
@@ -32,7 +32,8 @@ public class Quiz extends AppCompatActivity {
     }
 
 
-    // This method is called when you click the CHECK YOUR ANSWERS button
+    // This method is called when you click the SUBMIT YOUR ANSWERS button
+    //It shows different toast messages according to the scores achieved.
 
     public void checkAnswers(View view) {
         score = 0;
@@ -47,7 +48,13 @@ public class Quiz extends AppCompatActivity {
         score += checkQuestion9();
         score += checkQuestion10();
 
-        Toast.makeText(this, "You answered correctly to " + score + " out of 10 questions", Toast.LENGTH_SHORT).show();
+        if (score <= 4) {
+            Toast.makeText(this, "You answered correctly to " + score + " out of 10 questions. " + " Not too bad!", Toast.LENGTH_LONG).show();
+        } else if (score > 8) {
+            Toast.makeText(this, "You answered correctly to " + score + " out of 10 questions. " + " Excellent Job!", Toast.LENGTH_LONG).show();
+        } else {
+            Toast.makeText(this, "You answered correctly to " + score + " out of 10 questions. " + " Well done!", Toast.LENGTH_LONG).show();
+        }
     }
 
     //This method checks question 1. In case of correct answer the value of score is increased by 1.
@@ -199,6 +206,8 @@ public class Quiz extends AppCompatActivity {
             return 0;
         }
     }
+
+    //By pressing the "Show the answers" button the app goes to the result screen.
 
     public void onClick(View view) {
         Intent intent = new Intent(this, Result.class);

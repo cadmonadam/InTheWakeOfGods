@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 /**
- * Created by Adam Cadmon on 2017. 04. 02..
+ * This screen shows the correct answers.
  */
 
 public class Result extends AppCompatActivity {
