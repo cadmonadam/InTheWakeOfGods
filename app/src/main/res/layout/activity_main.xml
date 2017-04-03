@@ -8,57 +8,25 @@
 
     <LinearLayout
         android:id="@+id/activity_main"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#90d35400"
-        android:orientation="vertical"
+        style="@style/LinearLayoutMainActivity"
         tools:context="com.example.android.inthewakeofgods.MainActivity">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="40dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="40dp"
-            android:fontFamily="sans-serif-smallcaps"
-            android:text="@string/Title"
-            android:textColor="#000000"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+            style="@style/TitleTextView"
+            android:text="@string/Title" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="80dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:fontFamily="sans-serif-smallcaps"
-            android:text="@string/Subtitle"
-            android:textColor="#000000"
-            android:textSize="24sp" />
+            style="@style/SubTitleTextView"
+            android:text="@string/Subtitle" />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="45dp"
-            android:adjustViewBounds="true"
+            style="@style/ImageView_Mainactivity"
             android:src="@drawable/volcano3" />
 
         <Button
-            style="@style/Button1"
-            android:layout_centerVertical="true"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="50dp"
-            android:layout_marginTop="60dp"
-            android:fontFamily="sans-serif-smallcaps"
+            style="@style/ButtonMain"
             android:onClick="onClick"
-            android:text="@string/button_start"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:text="@string/button_start" />
 
     </LinearLayout>
 </ScrollView>

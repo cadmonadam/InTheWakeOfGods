@@ -12,184 +12,111 @@
         android:layout_height="match_parent"
         tools:context="com.example.android.inthewakeofgods.MainActivity">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:background="#90d35400"
-            android:orientation="vertical">
+        <LinearLayout style="@style/LinearLayoutQuizMain">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="20dp"
-                android:fontFamily="sans-serif-smallcaps"
-                android:text="@string/question1"
-                android:textColor="#000000"
-                android:textSize="20sp" />
+                style="@style/TextViewQuiz"
+                android:text="@string/question1" />
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:adjustViewBounds="true"
+                style="@style/ImageViewQuiz"
                 android:src="@drawable/prometheus" />
 
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="horizontal">
+            <RadioGroup style="@style/RadioGroupHorizontal">
 
                 <RadioButton
                     android:id="@+id/q1a1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/RadioButton"
                     android:text="@string/q1answer1" />
 
                 <RadioButton
                     android:id="@+id/q1a2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/RadioButton"
                     android:text="@string/q1answer2" />
 
                 <RadioButton
                     android:id="@+id/q1a3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/RadioButton"
                     android:text="@string/q1answer3" />
 
                 <RadioButton
                     android:id="@+id/q1a4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/RadioButton"
                     android:text="@string/q1answer4" />
             </RadioGroup>
 
             <View
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:layout_marginTop="10dp"
+                style="@style/View"
                 android:background="@drawable/flames" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="10dp"
-                android:fontFamily="sans-serif-smallcaps"
-                android:text="@string/question2"
-                android:textColor="#000000"
-                android:textSize="20sp" />
+                style="@style/TextViewQuiz"
+                android:text="@string/question2" />
 
             <EditText
                 android:id="@+id/q2a"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                style="@style/EditText"
                 android:hint="@string/q2hint" />
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:adjustViewBounds="true"
+                style="@style/ImageViewQuiz"
                 android:src="@drawable/ares" />
 
             <View
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:layout_marginTop="10dp"
+                style="@style/View"
                 android:background="@drawable/flames" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="20dp"
-                android:fontFamily="sans-serif-smallcaps"
-                android:text="@string/question3"
-                android:textColor="#000000"
-                android:textSize="20sp" />
+                style="@style/TextViewQuiz"
+                android:text="@string/question3" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+            <LinearLayout style="@style/LinearLayoutHorizontal">
 
 
                 <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_weight="1"
+                    android:id="@+id/imageView"
+                    style="@style/ImageViewQuizwithWeight"
                     android:src="@drawable/hephaestus" />
 
-                <RadioGroup
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:orientation="vertical">
+                <RadioGroup style="@style/RadioGroupVertical">
 
                     <RadioButton
                         android:id="@+id/q3a1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/RadioButtonVertical"
                         android:text="@string/q3answer1" />
 
                     <RadioButton
                         android:id="@+id/q3a2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/RadioButtonVertical"
                         android:text="@string/q3answer2" />
 
                     <RadioButton
                         android:id="@+id/q3a3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/RadioButtonVertical"
                         android:text="@string/q3answer3" />
 
                     <RadioButton
                         android:id="@+id/q3a4"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/RadioButtonVertical"
                         android:text="@string/q3answer4" />
                 </RadioGroup>
             </LinearLayout>
 
             <View
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:layout_marginTop="10dp"
+                style="@style/View"
                 android:background="@drawable/flames" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="10dp"
-                android:fontFamily="sans-serif-smallcaps"
-                android:text="@string/question4"
-                android:textColor="#000000"
-                android:textSize="20sp" />
+                style="@style/TextViewQuiz"
+                android:text="@string/question4" />
 
             <EditText
                 android:id="@+id/q4a"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                style="@style/EditText"
                 android:hint="@string/q4hint" />
 
             <ImageView
+                style="@style/ImageViewQuiz"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -197,31 +124,21 @@
                 android:src="@drawable/zeus" />
 
             <View
+                style="@style/View"
                 android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:layout_marginTop="10dp"
                 android:background="@drawable/flames" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="10dp"
-                android:fontFamily="sans-serif-smallcaps"
-                android:text="@string/question5"
-                android:textColor="#000000"
-                android:textSize="20sp" />
+                style="@style/TextViewQuiz"
+                android:text="@string/question5" />
 
             <EditText
                 android:id="@+id/q5a"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                style="@style/EditText"
                 android:hint="@string/q5hint" />
 
             <ImageView
+                style="@style/ImageViewQuiz"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -229,9 +146,7 @@
                 android:src="@drawable/aphrodite" />
 
             <View
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:layout_marginTop="10dp"
+                style="@style/View"
                 android:background="@drawable/flames" />
 
             <TextView
@@ -245,136 +160,86 @@
                 android:textColor="#000000"
                 android:textSize="20sp" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+            <LinearLayout style="@style/LinearLayoutHorizontal">
 
 
                 <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_weight="1"
+                    style="@style/ImageViewQuizwithWeight"
                     android:src="@drawable/hades" />
 
-                <RadioGroup
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:orientation="vertical">
+                <RadioGroup style="@style/RadioGroupVertical">
 
                     <RadioButton
                         android:id="@+id/q6a1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/RadioButtonVertical"
                         android:text="@string/q6answer1" />
 
                     <RadioButton
                         android:id="@+id/q6a2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/RadioButtonVertical"
                         android:text="@string/q6answer2" />
 
                     <RadioButton
                         android:id="@+id/q6a3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/RadioButtonVertical"
                         android:text="@string/q6answer3" />
 
                     <RadioButton
                         android:id="@+id/q6a4"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/RadioButtonVertical"
                         android:text="@string/q6answer4" />
                 </RadioGroup>
             </LinearLayout>
 
             <View
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:layout_marginTop="10dp"
+                style="@style/View"
                 android:background="@drawable/flames" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="10dp"
-                android:fontFamily="sans-serif-smallcaps"
-                android:text="@string/question7"
-                android:textColor="#000000"
-                android:textSize="20sp" />
+                style="@style/TextViewQuiz"
+                android:text="@string/question7" />
 
             <EditText
                 android:id="@+id/q7a"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                style="@style/EditText"
                 android:hint="@string/q7hint" />
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:adjustViewBounds="true"
+                style="@style/ImageViewQuiz"
                 android:src="@drawable/hera" />
 
             <View
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:layout_marginTop="10dp"
+                style="@style/View"
                 android:background="@drawable/flames" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="20dp"
-                android:fontFamily="sans-serif-smallcaps"
-                android:text="@string/question8"
-                android:textColor="#000000"
-                android:textSize="20sp" />
+                style="@style/TextViewQuiz"
+                android:text="@string/question8" />
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:adjustViewBounds="true"
+                style="@style/ImageViewQuiz"
                 android:src="@drawable/poseidon" />
 
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="horizontal">
+            <RadioGroup style="@style/RadioGroupHorizontal">
 
                 <RadioButton
                     android:id="@+id/q8a1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/RadioButton"
                     android:text="@string/q8answer1" />
 
                 <RadioButton
                     android:id="@+id/q8a2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/RadioButton"
                     android:text="@string/q8answer2" />
 
                 <RadioButton
                     android:id="@+id/q8a3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/RadioButton"
                     android:text="@string/q8answer3" />
 
                 <RadioButton
                     android:id="@+id/q8a4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/RadioButton"
                     android:text="@string/q8answer4" />
             </RadioGroup>
 
@@ -395,118 +260,69 @@
                 android:textColor="#000000"
                 android:textSize="20sp" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+            <LinearLayout style="@style/LinearLayoutHorizontal">
 
 
                 <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_weight="1"
+                    style="@style/ImageViewQuizwithWeight"
                     android:src="@drawable/heracles" />
 
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
+                <LinearLayout style="@style/LinearLayoutwithweight">
 
 
                     <CheckBox
-                        android:id="@+id/q9a1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/q9answer1"
-                        android:textSize="18sp" />
+                        style="@style/CheckBox"
+                        android:text="@string/q9answer1" />
 
                     <CheckBox
                         android:id="@+id/q9a2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/q9answer2"
-                        android:textSize="18sp" />
+                        style="@style/CheckBox"
+                        android:text="@string/q9answer2" />
 
                     <CheckBox
                         android:id="@+id/q9a3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/q9answer3"
-                        android:textSize="18sp" />
+                        style="@style/CheckBox"
+                        android:text="@string/q9answer3" />
 
                     <CheckBox
                         android:id="@+id/q9a4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/q9answer4"
-                        android:textSize="18sp" />
+                        style="@style/CheckBox"
+                        android:text="@string/q9answer4" />
 
                 </LinearLayout>
             </LinearLayout>
 
             <View
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:layout_marginTop="10dp"
+                style="@style/View"
                 android:background="@drawable/flames" />
 
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="10dp"
-                android:fontFamily="sans-serif-smallcaps"
-                android:text="@string/question10"
-                android:textColor="#000000"
-                android:textSize="20sp" />
+                style="@style/TextViewQuiz"
+                android:text="@string/question10" />
 
             <EditText
                 android:id="@+id/q10a"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                style="@style/EditText"
                 android:hint="@string/q10hint" />
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:adjustViewBounds="true"
+                style="@style/ImageViewQuiz"
                 android:src="@drawable/morpheus" />
 
             <View
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:layout_marginTop="10dp"
+                style="@style/View"
                 android:background="@drawable/flames" />
 
             <Button
-                style="@style/Button2"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
+                style="@style/ButtonQuiz"
                 android:onClick="checkAnswers"
                 android:text="@string/submit" />
 
             <Button
-                style="@style/Button2"
-                android:layout_width="250dp"
-                android:layout_centerVertical="true"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
+                style="@style/ButtonQuiz"
                 android:onClick="onClick"
-                android:text="@string/answers"
-                android:textSize="14sp" />
+                android:text="@string/answers" />
 
 
         </LinearLayout>

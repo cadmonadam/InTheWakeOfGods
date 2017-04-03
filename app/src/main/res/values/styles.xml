@@ -8,27 +8,259 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="LinearLayoutMainActivity">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/colorBackground</item>
+        <item name="android:orientation">vertical</item>
 
-    <style name="Button1">
+    </style>
+
+    <style name="TitleTextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:fontFamily">sans-serif-smallcaps</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorBlackText</item>
+        <item name="android:textSize">@dimen/title_textSize</item>
+        <item name="android:layout_marginBottom">@dimen/title_layout_marginBottom</item>
+        <item name="android:layout_marginTop">@dimen/title_layout_marginTop</item>
+        <item name="android:layout_marginLeft">@dimen/title_layout_marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/title_layout_marginRight</item>
+
+    </style>
+
+
+    <style name="SubTitleTextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:fontFamily">sans-serif-smallcaps</item>
+        <item name="android:textColor">@color/colorBlackText</item>
+        <item name="android:textSize">@dimen/subtitle_textSize</item>
+        <item name="android:layout_marginBottom">@dimen/subtitle_layout_marginBottom</item>
+        <item name="android:layout_marginLeft">@dimen/subtitle_layout_marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/subtitle_layout_marginLeft</item>
+
+    </style>
+
+
+    <style name="ImageView_Mainactivity">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/imageview_main_layout_marginBottom</item>
+        <item name="android:adjustViewBounds">true</item>
+
+    </style>
+
+
+    <style name="ButtonMain">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_alignParentBottom">true</item>
         <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_gravity">center_horizontal</item>
         <item name="android:gravity">center</item>
-        <item name="android:background">#ff531a</item>
-        <item name="android:textColor">#212121</item>
+        <item name="android:background">@color/colorButtonBackground</item>
+        <item name="android:textColor">@color/colorButtonText</item>
+        <item name="android:fontFamily">sans-serif-smallcaps</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/button_textSize</item>
+        <item name="android:layout_marginBottom">@dimen/button_layout_marginBottom</item>
+        <item name="android:layout_marginTop">@dimen/button_layout_marginTop</item>
+
 
     </style>
 
-    <style name="Button2">
+
+    <style name="ButtonQuiz">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">@dimen/buttonquiz_layout_width</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/colorButtonBackground</item>
+        <item name="android:textColor">@color/colorButtonText</item>
+        <item name="android:textSize">@dimen/buttonquiz_textSize</item>
+        <item name="android:layout_marginBottom">@dimen/buttonquiz_layout_marginBottom</item>
+        <item name="android:layout_marginTop">@dimen/buttonquiz_layout_marginTop</item>
+
+
+    </style>
+
+
+    <style name="LinearLayoutResult">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/colorBackground</item>
+        <item name="android:orientation">vertical</item>
+
+    </style>
+
+    <style name="TitleTextViewResultMain">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_alignParentBottom">true</item>
-        <item name="android:layout_centerHorizontal">true</item>
-        <item name="android:gravity">center</item>
-        <item name="android:background">#ff531a</item>
-        <item name="android:textColor">#212121</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:fontFamily">sans-serif-smallcaps</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorBlackText</item>
+        <item name="android:textSize">@dimen/title_textSize</item>
+        <item name="android:layout_marginBottom">@dimen/title_layout_marginBottom</item>
+        <item name="android:layout_marginTop">@dimen/title_layout_marginTop</item>
+        <item name="android:layout_marginLeft">@dimen/title_layout_marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/title_layout_marginRight</item>
 
     </style>
+
+
+    <style name="TextViewResultMain">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">fill_horizontal</item>
+        <item name="android:textColor">@color/colorBlackText</item>
+        <item name="android:textSize">@dimen/textviewresult_textSize</item>
+        <item name="android:layout_marginLeft">@dimen/textviewresult_layout_marginLeft</item>
+
+
+    </style>
+
+
+    <style name="TitleTextViewResultEnd">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:fontFamily">sans-serif-smallcaps</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorBlackText</item>
+        <item name="android:textSize">@dimen/subtitle_textSize</item>
+        <item name="android:layout_marginBottom">@dimen/textviewresultend_marginBottom</item>
+        <item name="android:layout_marginTop">@dimen/textviewresultend_marginTop</item>
+        <item name="android:layout_marginLeft">@dimen/textviewresultend_marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/textviewresultend_marginRight</item>
+
+    </style>
+
+
+    <style name="LinearLayoutQuizMain">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/colorBackground</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginLeft">@dimen/linearlayoutquizmain_marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/linearlayoutquizmain_marginRight</item>
+
+    </style>
+
+
+    <style name="LinearLayoutwithweight">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">@dimen/linearlayoutquizmain_marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/linearlayoutquizmain_marginRight</item>
+
+    </style>
+
+    <style name="TextViewQuiz">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-smallcaps</item>
+        <item name="android:textColor">@color/colorBlackText</item>
+        <item name="android:textSize">@dimen/textviewquiz_textSize</item>
+        <item name="android:layout_marginTop">@dimen/textviewquiz_layout_marginTop</item>
+        <item name="android:layout_marginLeft">@dimen/textviewquiz_layout_marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/textviewquiz_layout_marginRight</item>
+
+    </style>
+
+
+    <style name="ImageViewQuiz">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+
+    <style name="ImageViewQuizwithWeight">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+
+    <style name="LinearLayoutHorizontal">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+
+
+    </style>
+
+
+    <style name="RadioGroupHorizontal">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+
+
+    </style>
+
+
+    <style name="RadioGroupVertical">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+
+
+    </style>
+
+
+    <style name="RadioButton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+
+    </style>
+
+    <style name="RadioButtonVertical">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+
+    </style>
+
+
+    <style name="EditText">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/edittext_layout_marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/edittext_layout_marginRight</item>
+
+    </style>
+
+    <style name="View">
+        <item name="android:layout_height">@dimen/view_layout_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/view_layout_marginTop</item>
+
+    </style>
+
+
+    <style name="CheckBox">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/checkbox_textSize</item>
+
+    </style>
+
 
 </resources>
