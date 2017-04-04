@@ -26,6 +26,7 @@
     <dimen name="buttonquiz_layout_marginBottom">10dp</dimen>
 
     <dimen name="textviewresult_layout_marginLeft">10dp</dimen>
+    <dimen name="textvieresult_layout_marginTop">10dp</dimen>
     <dimen name="textviewresult_textSize">22sp</dimen>
 
     <dimen name="textviewresultend_marginTop">20dp</dimen>

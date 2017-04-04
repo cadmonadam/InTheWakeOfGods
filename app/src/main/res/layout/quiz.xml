@@ -117,10 +117,6 @@
 
             <ImageView
                 style="@style/ImageViewQuiz"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:adjustViewBounds="true"
                 android:src="@drawable/zeus" />
 
             <View
@@ -139,10 +135,6 @@
 
             <ImageView
                 style="@style/ImageViewQuiz"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:adjustViewBounds="true"
                 android:src="@drawable/aphrodite" />
 
             <View
@@ -150,15 +142,8 @@
                 android:background="@drawable/flames" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="20dp"
-                android:fontFamily="sans-serif-smallcaps"
-                android:text="@string/question6"
-                android:textColor="#000000"
-                android:textSize="20sp" />
+                style="@style/TextViewQuiz"
+                android:text="@string/question6" />
 
             <LinearLayout style="@style/LinearLayoutHorizontal">
 
@@ -244,21 +229,12 @@
             </RadioGroup>
 
             <View
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:layout_marginTop="10dp"
+                style="@style/View"
                 android:background="@drawable/flames" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="20dp"
-                android:fontFamily="sans-serif-smallcaps"
-                android:text="@string/question9"
-                android:textColor="#000000"
-                android:textSize="20sp" />
+                style="@style/TextViewQuiz"
+                android:text="@string/question9" />
 
             <LinearLayout style="@style/LinearLayoutHorizontal">
 
