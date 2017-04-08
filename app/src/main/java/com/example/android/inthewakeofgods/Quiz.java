@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+import static com.example.android.inthewakeofgods.R.string.question5;
+
 /**
  * This is the quiz activity screen.
  */
@@ -17,8 +19,8 @@ import android.widget.Toast;
 public class Quiz extends AppCompatActivity {
 
 
-    // The score integer counts the number of correct answers.
-    int score = 0;
+    // This integer counts the number of correct answers.
+    int numberOfCorrectAnswers = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,94 +38,94 @@ public class Quiz extends AppCompatActivity {
     //It shows different toast messages according to the scores achieved.
 
     public void checkAnswers(View view) {
-        score = 0;
-        score += checkQuestion1();
-        score += checkQuestion2();
-        score += checkQuestion3();
-        score += checkQuestion4();
-        score += checkQuestion5();
-        score += checkQuestion6();
-        score += checkQuestion7();
-        score += checkQuestion8();
-        score += checkQuestion9();
-        score += checkQuestion10();
+        numberOfCorrectAnswers = 0;
+        numberOfCorrectAnswers += checkQuestion1();
+        numberOfCorrectAnswers += checkQuestion2();
+        numberOfCorrectAnswers += checkQuestion3();
+        numberOfCorrectAnswers += checkQuestion4();
+        numberOfCorrectAnswers += checkQuestion5();
+        numberOfCorrectAnswers += checkQuestion6();
+        numberOfCorrectAnswers += checkQuestion7();
+        numberOfCorrectAnswers += checkQuestion8();
+        numberOfCorrectAnswers += checkQuestion9();
+        numberOfCorrectAnswers += checkQuestion10();
 
-        if (score <= 4) {
-            Toast.makeText(this, "You answered correctly to " + score + " out of 10 questions. " + " Not too bad!", Toast.LENGTH_LONG).show();
-        } else if (score > 8) {
-            Toast.makeText(this, "You answered correctly to " + score + " out of 10 questions. " + " Excellent Job!", Toast.LENGTH_LONG).show();
+        if (numberOfCorrectAnswers <= 4) {
+            Toast.makeText(this, "You answered correctly to " + numberOfCorrectAnswers + " out of 10 questions. " + " Not too bad!", Toast.LENGTH_LONG).show();
+        } else if (numberOfCorrectAnswers > 8) {
+            Toast.makeText(this, "You answered correctly to " + numberOfCorrectAnswers + " out of 10 questions. " + " Excellent Job!", Toast.LENGTH_LONG).show();
         } else {
-            Toast.makeText(this, "You answered correctly to " + score + " out of 10 questions. " + " Well done!", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "You answered correctly to " + numberOfCorrectAnswers + " out of 10 questions. " + " Well done!", Toast.LENGTH_LONG).show();
         }
     }
 
-    //This method checks question 1. In case of correct answer the value of score is increased by 1.
+    //This method checks question 1. In case of correct answer the value of numberOfCorrectAnswers is increased by 1.
 
     public int checkQuestion1() {
 
         RadioButton question1 = (RadioButton) findViewById(R.id.q1a2);
-        boolean Prometheus = question1.isChecked();
+        boolean isAnswerPrometheus = question1.isChecked();
 
-        if (Prometheus) {
+        if (isAnswerPrometheus) {
             return 1;
         } else {
             return 0;
         }
     }
 
-    // This method checks question 2. In case of correct answer the value of score is increased by 1.
+    // This method checks question 2. In case of correct answer the value of numberOfCorrectAnswers is increased by 1.
 
     public int checkQuestion2() {
 
         EditText question2 = (EditText) findViewById(R.id.q2a);
         Editable userText = question2.getText();
-        String Ares = userText.toString();
+        String answerQuestion2 = userText.toString();
 
-        if (Ares.equals("Ares")) {
+        if (answerQuestion2.equals("Ares")) {
             return 1;
         } else {
             return 0;
         }
     }
 
-    //This method checks question 3. In case of correct answer the value of score is increased by 1.
+    //This method checks question 3. In case of correct answer the value of numberOfCorrectAnswers is increased by 1.
 
     public int checkQuestion3() {
 
         RadioButton question3 = (RadioButton) findViewById(R.id.q3a2);
-        boolean Hephaestus = question3.isChecked();
+        boolean isAnswerHephaestus = question3.isChecked();
 
-        if (Hephaestus) {
+        if (isAnswerHephaestus) {
             return 1;
         } else {
             return 0;
         }
     }
 
-// This method checks question 4. In case of correct answer the value of score is increased by 1.
+// This method checks question 4. In case of correct answer the value of numberOfCorrectAnswers is increased by 1.
 
     public int checkQuestion4() {
 
         EditText question4 = (EditText) findViewById(R.id.q4a);
         Editable userText = question4.getText();
-        String Zeus = userText.toString();
+        String answerQuestion4 = userText.toString();
 
-        if (Zeus.equals("Zeus")) {
+        if (answerQuestion4.equals("Zeus")) {
             return 1;
         } else {
             return 0;
         }
     }
 
-// This method checks question 5. In case of correct answer the value of score is increased by 1.
+// This method checks question 5. In case of correct answer the value of numberOfCorrectAnswers is increased by 1.
 
     public int checkQuestion5() {
 
         EditText question5 = (EditText) findViewById(R.id.q5a);
         Editable userText = question5.getText();
-        String Aphrodite = userText.toString();
+        String answerQuestion5 = userText.toString();
 
-        if (Aphrodite.equals("Aphrodite")) {
+        if (answerQuestion5.equals("Aphrodite")) {
             return 1;
         } else {
             return 0;
@@ -131,43 +133,43 @@ public class Quiz extends AppCompatActivity {
     }
 
 
-    //This method checks question 6. In case of correct answer the value of score is increased by 1.
+    //This method checks question 6. In case of correct answer the value of numberOfCorrectAnswers is increased by 1.
 
     public int checkQuestion6() {
 
         RadioButton question6 = (RadioButton) findViewById(R.id.q6a2);
-        boolean Hades = question6.isChecked();
+        boolean isAnswerHades = question6.isChecked();
 
-        if (Hades) {
+        if (isAnswerHades) {
             return 1;
         } else {
             return 0;
         }
     }
 
-// This method checks question 7. In case of correct answer the value of score is increased by 1.
+// This method checks question 7. In case of correct answer the value of numberOfCorrectAnswers is increased by 1.
 
     public int checkQuestion7() {
 
-        EditText question5 = (EditText) findViewById(R.id.q7a);
-        Editable userText = question5.getText();
-        String Hera = userText.toString();
+        EditText question7 = (EditText) findViewById(R.id.q7a);
+        Editable userText = question7.getText();
+        String answerQuestion7 = userText.toString();
 
-        if (Hera.equals("Hera")) {
+        if (answerQuestion7.equals("Hera")) {
             return 1;
         } else {
             return 0;
         }
     }
 
-    //This method checks question 8. In case of correct answer the value of score is increased by 1.
+    //This method checks question 8. In case of correct answer the value of numberOfCorrectAnswers is increased by 1.
 
     public int checkQuestion8() {
 
         RadioButton question8 = (RadioButton) findViewById(R.id.q8a1);
-        boolean Poseidon = question8.isChecked();
+        boolean isAnswerPoseidon = question8.isChecked();
 
-        if (Poseidon) {
+        if (isAnswerPoseidon) {
             return 1;
         } else {
             return 0;
@@ -175,32 +177,32 @@ public class Quiz extends AppCompatActivity {
     }
 
 
-    // This method checks question 9. In case of correct answer the value of score is increased by 1.
+    // This method checks question 9. In case of correct answer the value of numberOfCorrectAnswers is increased by 1.
 
     public int checkQuestion9() {
 
         CheckBox question9A = (CheckBox) findViewById(R.id.q9a1);
-        boolean Lion = question9A.isChecked();
+        boolean isAnswerLion = question9A.isChecked();
 
         CheckBox question9C = (CheckBox) findViewById(R.id.q9a3);
-        boolean Bull = question9C.isChecked();
+        boolean isAnswerBull = question9C.isChecked();
 
-        if (Lion && Bull) {
+        if (isAnswerLion && isAnswerBull) {
             return 1;
         } else {
             return 0;
         }
     }
 
-// This method checks question 10. In case of correct answer the value of score is increased by 1.
+// This method checks question 10. In case of correct answer the value of numberOfCorrectAnswers is increased by 1.
 
     public int checkQuestion10() {
 
         EditText question10 = (EditText) findViewById(R.id.q10a);
         Editable userText = question10.getText();
-        String Morpheus = userText.toString();
+        String answerQuestion10 = userText.toString();
 
-        if (Morpheus.equals("Morpheus")) {
+        if (answerQuestion10.equals("Morpheus")) {
             return 1;
         } else {
             return 0;
