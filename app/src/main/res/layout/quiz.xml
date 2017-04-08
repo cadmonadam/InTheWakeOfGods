@@ -247,6 +247,7 @@
 
 
                     <CheckBox
+                        android:id="@+id/q9a1"
                         style="@style/CheckBox"
                         android:text="@string/q9answer1" />
 
