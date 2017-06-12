@@ -79,9 +79,9 @@ public class Quiz extends AppCompatActivity {
 
         EditText question2 = (EditText) findViewById(R.id.q2a);
         Editable userText = question2.getText();
-        String answerQuestion2 = userText.toString();
+        String answerQuestion2 = userText.toString().trim();
 
-        if (answerQuestion2.equals("Ares")) {
+        if (answerQuestion2.equalsIgnoreCase("Ares")) {
             return 1;
         } else {
             return 0;
@@ -108,9 +108,9 @@ public class Quiz extends AppCompatActivity {
 
         EditText question4 = (EditText) findViewById(R.id.q4a);
         Editable userText = question4.getText();
-        String answerQuestion4 = userText.toString();
+        String answerQuestion4 = userText.toString().trim();
 
-        if (answerQuestion4.equals("Zeus")) {
+        if (answerQuestion4.equalsIgnoreCase("Zeus")) {
             return 1;
         } else {
             return 0;
@@ -123,9 +123,9 @@ public class Quiz extends AppCompatActivity {
 
         EditText question5 = (EditText) findViewById(R.id.q5a);
         Editable userText = question5.getText();
-        String answerQuestion5 = userText.toString();
+        String answerQuestion5 = userText.toString().trim();
 
-        if (answerQuestion5.equals("Aphrodite")) {
+        if (answerQuestion5.equalsIgnoreCase("Aphrodite")) {
             return 1;
         } else {
             return 0;
@@ -153,9 +153,9 @@ public class Quiz extends AppCompatActivity {
 
         EditText question7 = (EditText) findViewById(R.id.q7a);
         Editable userText = question7.getText();
-        String answerQuestion7 = userText.toString();
+        String answerQuestion7 = userText.toString().trim();
 
-        if (answerQuestion7.equals("Hera")) {
+        if (answerQuestion7.equalsIgnoreCase("Hera")) {
             return 1;
         } else {
             return 0;
@@ -184,10 +184,17 @@ public class Quiz extends AppCompatActivity {
         CheckBox question9A = (CheckBox) findViewById(R.id.q9a1);
         boolean isAnswerLion = question9A.isChecked();
 
+        CheckBox question9B = (CheckBox) findViewById(R.id.q9a2);
+        boolean isAnwerTitan = question9B.isChecked();
+
         CheckBox question9C = (CheckBox) findViewById(R.id.q9a3);
         boolean isAnswerBull = question9C.isChecked();
 
-        if (isAnswerLion && isAnswerBull) {
+        CheckBox question9D = (CheckBox) findViewById(R.id.q9a4);
+        boolean isAnswerMedusa = question9D.isChecked();
+
+
+        if (isAnswerLion && isAnswerBull && !isAnwerTitan && !isAnswerMedusa) {
             return 1;
         } else {
             return 0;
@@ -200,9 +207,9 @@ public class Quiz extends AppCompatActivity {
 
         EditText question10 = (EditText) findViewById(R.id.q10a);
         Editable userText = question10.getText();
-        String answerQuestion10 = userText.toString();
+        String answerQuestion10 = userText.toString().trim();
 
-        if (answerQuestion10.equals("Morpheus")) {
+        if (answerQuestion10.equalsIgnoreCase("Morpheus")) {
             return 1;
         } else {
             return 0;

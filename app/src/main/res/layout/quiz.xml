@@ -8,8 +8,7 @@
 
     <RelativeLayout
         android:id="@+id/quiz"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        style="@style/quizRelativeLayout"
         tools:context="com.example.android.inthewakeofgods.MainActivity">
 
         <LinearLayout style="@style/LinearLayoutQuizMain">
